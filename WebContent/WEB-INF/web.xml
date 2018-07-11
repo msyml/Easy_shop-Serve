@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Kcsj</display-name>
+
+	<!-- 根据id查找订单 -->
+	<servlet>
+		<servlet-name>UpdateAddress</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.UpdateAddress</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAddress</servlet-name>
+		<url-pattern>/UpdateAddress</url-pattern>
+	</servlet-mapping>
+	<!-- 根据id查找订单 -->
+	<servlet>
+		<servlet-name>QueryOrder</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.QueryOrder</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryOrder</servlet-name>
+		<url-pattern>/QueryOrder</url-pattern>
+	</servlet-mapping>
+	<!-- 根据id删除地址 -->
+	<servlet>
+		<servlet-name>DelAddress</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.DelAddress</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelAddress</servlet-name>
+		<url-pattern>/DelAddress</url-pattern>
+	</servlet-mapping>
+	<!-- 添加订单 -->
+	<servlet>
+		<servlet-name>AddOrderFrom</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.AddOrderFrom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddOrderFrom</servlet-name>
+		<url-pattern>/AddOrderFrom</url-pattern>
+	</servlet-mapping>
+	<!-- 删除购物车 -->
+	<servlet>
+		<servlet-name>DelShopCart</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.DelShopCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelShopCart</servlet-name>
+		<url-pattern>/DelShopCart</url-pattern>
+	</servlet-mapping>
+	<!-- 添加收货地址 -->
+	<servlet>
+		<servlet-name>AddAddress</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.AddAddress</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAddress</servlet-name>
+		<url-pattern>/AddAddress</url-pattern>
+	</servlet-mapping>
+	<!-- 查找id对应的地址 -->
+	<servlet>
+		<servlet-name>QueryAddress</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.QueryAddress</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryAddress</servlet-name>
+		<url-pattern>/QueryAddress</url-pattern>
+	</servlet-mapping>
+	<!-- 查找id对应的购物车 -->
+	<servlet>
+		<servlet-name>QueryShopCart</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.QueryShopCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryShopCart</servlet-name>
+		<url-pattern>/QueryShopCart</url-pattern>
+	</servlet-mapping>
+	<!-- 添加购物车 -->
+	<servlet>
+		<servlet-name>AddShopCart</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.AddShopCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddShopCart</servlet-name>
+		<url-pattern>/AddShopCart</url-pattern>
+	</servlet-mapping>
+	<!-- 查询商品 -->
+	<servlet>
+		<servlet-name>QueryCommodity</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.QueryCommodity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryCommodity</servlet-name>
+		<url-pattern>/QueryCommodity</url-pattern>
+	</servlet-mapping>
+	<!-- 修改性别 -->
+	<servlet>
+		<servlet-name>UpdateSex</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.UpdateSex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateSex</servlet-name>
+		<url-pattern>/UpdateSex</url-pattern>
+	</servlet-mapping>
+	<!-- 修改生日 -->
+	<servlet>
+		<servlet-name>UpdateBirth</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.UpdateBirth</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateBirth</servlet-name>
+		<url-pattern>/UpdateBirth</url-pattern>
+	</servlet-mapping>
+	<!-- 修改密码 -->
+	<servlet>
+		<servlet-name>UpdatePassword</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.UpdatePassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePassword</servlet-name>
+		<url-pattern>/UpdatePassword</url-pattern>
+	</servlet-mapping>
+	<!-- 添加账号 -->
+	<servlet>
+		<servlet-name>AddUser</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.AddUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUser</servlet-name>
+		<url-pattern>/AddUser</url-pattern>
+	</servlet-mapping>
+	<!-- 判断帐号是否存在 -->
+	<servlet>
+		<servlet-name>CheckAccount</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.CheckAccount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckAccount</servlet-name>
+		<url-pattern>/CheckAccount</url-pattern>
+	</servlet-mapping>
+	<!-- 判断手机号是否存在 -->
+	<servlet>
+		<servlet-name>CheckPhone</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.CheckPhone</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckPhone</servlet-name>
+		<url-pattern>/CheckPhone</url-pattern>
+	</servlet-mapping>
+	<!-- 查询全部商品 -->
+	<servlet>
+		<servlet-name>QueryAllCommodity</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.QueryAllCommodity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryAllCommodity</servlet-name>
+		<url-pattern>/QueryAllCommodity</url-pattern>
+	</servlet-mapping>
+	<!-- 增加商品 -->
+	<servlet>
+		<servlet-name>AddCommodity</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.AddCommodity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCommodity</servlet-name>
+		<url-pattern>/AddCommodity</url-pattern>
+	</servlet-mapping>
+	<!-- 修改商品 -->
+	<servlet>
+		<servlet-name>UpdateCommodity</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.UpdateCommodity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCommodity</servlet-name>
+		<url-pattern>/UpdateCommodity</url-pattern>
+	</servlet-mapping>
+	<!-- 删除商品 -->
+	<servlet>
+		<servlet-name>DelCommodity</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.DelCommodity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelCommodity</servlet-name>
+		<url-pattern>/DelCommodity</url-pattern>
+	</servlet-mapping>
+	<!-- 登录判断 -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>msyml.kcsj.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
